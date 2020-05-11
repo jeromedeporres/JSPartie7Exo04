@@ -6,12 +6,10 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <img src="assets/img/la-nuit-etoilee.jpg" alt="La nuit étoilée - V. VAN GOGH" onclick="resizeImage(this)"/>
+  <img src="assets/img/la-nuit-etoilee.jpg" alt="La nuit étoilée - V. VAN GOGH"  id="img" onclick="sizeImg()"/>
   <script>
-    function resizeImage(img) {
-      img.style.width = "900px";
-      img.style.height = "700px";
-}
+      var img = document.getElementById('img');
+      var sizeImg = () => img.classList.toggle('size');
   </script>
 </body>
 </html>
